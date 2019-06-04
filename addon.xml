@@ -12,10 +12,10 @@
     <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.resolveurl" optional="true"/>
+    <import addon="script.module.resolveurl"/>
     <import addon="script.module.simplejson" />    
     <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.slproxy" optional="true"/>
+    <import addon="script.module.slproxy"/>
     <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
