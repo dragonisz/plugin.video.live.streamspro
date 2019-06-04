@@ -11,5 +11,10 @@ This fork has been testend on **Kodi Leia 18.2**, btw it should work in any rele
 * Can't understand anything? [Check Wiki](https://github.com/cttynul/plugin.video.live.streamspro/wiki)
 * Something isn't working? [Let me know](https://github.com/cttynul/plugin.video.live.streamspro/issues)
 
+### DMCA
+Live Streams Pro + **doesn't contain or provide anything**! And it isn't developed with the prupose of violating any copyright, LSP+ works exactly like a video player, complaining about it cause it could make you watch pirated content is like complaining about _insert any video player here_ cause it could do the same. 
+
+Any copyright infringement wil be user fault, not mine. If you legally buy a gun and you use it to rob a bank whose fault is that? Seller or yours?
+
 ### License
 Published under **GNU General Public License V2** as original projects developed by Shani and divingmule were, [here](https://github.com/cttynul/plugin.video.live.streamspro/blob/master/LICENSE.txt) something about license.
