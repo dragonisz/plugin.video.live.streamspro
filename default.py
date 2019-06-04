@@ -3,7 +3,7 @@ import urllib, re, os, sys
 import xbmc, xbmcplugin, xbmcgui, xbmcaddon, xbmcvfs
 import cookielib, traceback, base64, time
 
-addon = xbmcaddon.Addon('plugin.video.livestreamspro')
+addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 sys.path.append(xbmc.translatePath(os.path.join(xbmc.translatePath(addon.getAddonInfo('Path')), 'lib')))
 
 from lib import _core 
@@ -191,7 +191,7 @@ def _source_search(search_object=None, search_content="all"):
 
 def _search(url,name):
    # print url,name
-    pluginsearchurls = ['plugin://plugin.video.livestreamspro/?mode=400',\
+    pluginsearchurls = ['plugin://plugin.video.live.streamspro/?mode=400',\
              'VideoLibrary.Search',\
              'plugin://plugin.video.youtube/kodion/search/list/',\
              'plugin://plugin.video.dailymotion_com/?mode=search&amp;url',\
@@ -609,7 +609,7 @@ if not playitem =='':
     mode=117
 
 elif mode==99:
-    #xbmcaddon.Addon("plugin.video.livestreamspro").openSettings()
+    #xbmcaddon.Addon("plugin.video.live.streamspro").openSettings()
     _core.addDir('Add Source Url', 'url', 87, "https://raw.githubusercontent.com/cttynul/xbmcttynul/master/media/menu/impostazioni.png", FANART,'Configura Trakt.tv o TV Time per sincronizzare i contenuti che hai visto con il tuo provider remoto preferito!','','','', True)
     _core.addDir('Add Community Source', 'url', 10, "https://raw.githubusercontent.com/cttynul/xbmcttynul/master/media/menu/impostazioni.png", FANART,'Configura Trakt.tv o TV Time per sincronizzare i contenuti che hai visto con il tuo provider remoto preferito!','','','', True)
     _core.addDir('Remove Source(s)', 'url', 88, "https://raw.githubusercontent.com/cttynul/xbmcttynul/master/media/menu/impostazioni.png", FANART,'Configura Trakt.tv o TV Time per sincronizzare i contenuti che hai visto con il tuo provider remoto preferito!','','','', True)
@@ -627,7 +627,7 @@ elif mode==97:
         path = os.path.join(xbmc.translatePath('special://userdata'),'autoexec.py')
         file = open(path, "w+") 
         file.write("import xbmc\n")
-        file.write("xbmc.executebuiltin('XBMC.RunAddon(plugin.video.livestreamspro)')") 
+        file.write("xbmc.executebuiltin('XBMC.RunAddon(plugin.video.live.streamspro)')") 
         file.close() 
     if autostart == "false":
         path = os.path.join(xbmc.translatePath('special://userdata'),'autoexec.py')
@@ -636,7 +636,7 @@ elif mode==97:
     xbmcgui.Dialog().ok("Live Streams Pro", "Le impostazioni di avvio automatico sono state salvate!")
 
 elif mode==96:
-     xbmcaddon.Addon("plugin.video.livestreamspro").openSettings()
+     xbmcaddon.Addon("plugin.video.live.streamspro").openSettings()
 
 if mode==None:
     _core.addon_log("_core.homepage")

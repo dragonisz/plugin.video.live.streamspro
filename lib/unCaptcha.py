@@ -8,7 +8,7 @@ import urlparse, urllib,urllib2,cookielib
 from base64 import b64encode
 import xbmc
 import xbmcgui,xbmcaddon,os
-__scriptID__ = 'plugin.video.livestreamspro'
+__scriptID__ = 'plugin.video.live.streamspro'
 __addon__ = xbmcaddon.Addon(__scriptID__)
 
 class cInputWindow(xbmcgui.WindowDialog):

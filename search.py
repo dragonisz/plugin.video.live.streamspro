@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import xbmc, xbmcaddon, xbmcgui, sys, os, re, urllib, urllib2
-addon = xbmcaddon.Addon('plugin.video.livestreamspro')
+addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 source_file = os.path.join(profile, 'source_file')
 try:

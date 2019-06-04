@@ -4,7 +4,7 @@ import xbmc, xbmcaddon, time
 
 class MyXBMCPlayer(xbmc.Player):
     global addon 
-    addon = xbmcaddon.Addon('plugin.video.livestreamspro')
+    addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 
     def __init__( self, *args, **kwargs ):
         self.is_active = True

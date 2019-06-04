@@ -5,7 +5,7 @@ import xbmc, xbmcplugin, xbmcgui, xbmcaddon, xbmcvfs
 import traceback
 import cookielib, traceback, base64
 
-addon = xbmcaddon.Addon('plugin.video.livestreamspro')
+addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 sys.path.append(xbmc.translatePath(os.path.join(xbmc.translatePath(addon.getAddonInfo('Path')), 'lib')))
 
 from BeautifulSoup import BeautifulStoneSoup, BeautifulSoup, BeautifulSOAP
@@ -67,7 +67,7 @@ def get_remote_debug():
     return REMOTE_DBG
 
 def get_localized_string(code):
-    addon = xbmcaddon.Addon('plugin.video.livestreamspro')
+    addon = xbmcaddon.Addon('plugin.video.live.streamspro')
     string_translated = addon.getLocalizedString(code)
     try: string_translated = dev.encode("utf-8")
     except: pass
