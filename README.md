@@ -1,5 +1,3 @@
-# Live Streams Pro +
-
 ![](https://i.imgur.com/c7Ks3m8.png)
 
 **Live Streams Pro +**, shamelessly a fork of a fork, livestreams originally developed by **divingmule** first and **Shani** later.
