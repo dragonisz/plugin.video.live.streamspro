@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.livestreamspro"
-       name="Live Streams Pro"
+       name="LiveStreamsPro+"
        version="3.5.1"
        provider-name="cttynul, Shani, divingmule">
   <requires>
@@ -24,7 +24,7 @@
   <extension point="xbmc.service" library="service.py" start="login|startup"/>
 
   <extension point="xbmc.addon.metadata">
-    <summary>Live Streams Pro, shamelessly a fork of a fork, livestreams originally developed by divingmule first and Shani later</summary>
+    <summary>Live Streams Pro +, shamelessly a fork of a fork, livestreams originally developed by divingmule first and Shani later</summary>
     <description>
         This can just do what Live Streams Pro could do, but with some new cool features.
         For more info check documentation page at url: -- soon there will be something here --
