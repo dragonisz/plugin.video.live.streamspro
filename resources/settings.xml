@@ -1,0 +1,104 @@
+﻿<settings>
+  <category label="Add Source">
+    <setting label="Basic Source Info" type="lsep"/>
+    <setting id="choose_source" type="enum" values="Choose File|Enter URL" label="Choose Source Type" default="0"/>
+    <setting id="new_file_source" type="file" source="files" label="Choose File" default="" visible="eq(-1,0)"/>
+    <setting id="new_url_source" type="text" label="Add URL" default="" visible="eq(-2,1)"/>
+    <setting id="user_agent" type="text" label="Add User-Agent" default="Default" visible="eq(-3,1)"/>
+    <!--<setting id="choose_contet_type" type="enum" values="Live TV|Video on Demand|Sport|Download|Other" label="Choose Source Type" default="0"/>-->
+    <setting id="show_advanced" type="bool" label="Show Advanced Option" default="false"/>
+    <setting id="new_source_name_bold" type="bool" label="Mark source name as bold" default="false" visible="eq(-1,true)"/>
+    <setting id="choose_source_thumb" type="enum" values="Choose File|Enter URL" label="Choose Thumbnail Source" default="" visible="eq(-2,true)"/>
+    <setting id="new_file_source_thumb" type="file" source="files" label="Choose Thumbnail File" default="" enable="eq(-3,true)" visible="eq(-1,0)"/>
+    <setting id="new_url_source_thumb" type="text" label="Add Thumbnail URL" default="" enable="eq(-4,true)" visible="eq(-2,1)"/>
+    <setting id="new_url_source_desc" type="text" label="Source Description" default="" visible="eq(-5,true)" />
+    <setting label="Add Source" type="lsep"/>
+    <setting id="new_source_as_visible" type="bool" label="Set new source as visibile in menu" default="true"/>
+    <setting type="action" label="Click here to add source" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=7)" />
+  </category>
+
+  <category label="Add List of Sources">
+    <setting label="Single link MUST be separated by a \n" type="lsep"/>
+    <setting id="choose_folder_source" type="enum" values="Choose File|Enter URL" label="Choose Source Type" default="0"/>
+    <setting id="new_folder_file_source" type="file" source="files" label="Choose File" default="" visible="eq(-1,0)"/>
+    <setting id="new_folder_url_source" type="text" label="Add URL" default="" visible="eq(-2,1)"/>
+    <setting id="user_agent" type="text" label="Add User-Agent" default="Default" visible="eq(-3,1)"/>
+    <!--<setting id="choose_contet_type" type="enum" values="Live TV|Video on Demand|Sport|Download|Other" label="Choose Source Type" default="0"/>-->
+    <setting id="show_advanced" type="bool" label="Show Advanced Option" default="false"/>
+    <setting id="new_source_name_bold" type="bool" label="Mark source name as bold" default="false" visible="eq(-1,true)"/>
+    <setting id="choose_source_thumb" type="enum" values="Choose File|Enter URL" label="Choose Thumbnail Source" default="" visible="eq(-2,true)"/>
+    <setting id="new_file_source_thumb" type="file" source="files" label="Choose Thumbnail File" default="" enable="eq(-3,true)" visible="eq(-1,0)"/>
+    <setting id="new_url_source_thumb" type="text" label="Add Thumbnail URL" default="" enable="eq(-4,true)" visible="eq(-2,1)"/>
+    <setting id="new_url_source_desc" type="text" label="Source Description" default="" visible="eq(-5,true)" />
+    <setting label="Add Source" type="lsep"/>
+    <setting id="new_source_as_visible" type="bool" label="Set new source as visibile in menu" default="true"/>
+    <setting type="action" label="Click here to add source" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=77)" />
+  </category>
+
+  <category label="General">
+    <setting label="Download" type="lsep"/>
+    <setting id="enable_download" label="Enable Download" type="bool" default="false"/>
+    <setting id="save_location" type="folder" label="Select a download location" default="" visible="eq(-1,true)"/>
+    <setting label="Config" type="lsep"/>
+    <setting id="debug" type="bool" label="Enable Add-on Debugging" default="false"/>    
+    <setting id="parentalblockedpin" label="Parental Block Pin" type="text"  option="hidden"  default=""/>
+    <setting id="parentalblocked" label="Is Parental Blocked Applied?" type="bool" default="false" enable="false"/>
+  </category>
+
+  <category label="EPG Setting">
+    <setting id="logo_epg_enable" label="Enable custom EPG logos" type="bool" default="false"/>
+    <setting id="logo-folderPath" type="folder"  label="Select Directory for EPG Logos" default="" enable="eq(-1,true)"/>
+    <setting id="epg_enable" label="[EXPERIMENTAL] Enable EPG infos" type="bool" default="false"/>
+    <setting id="epg_link" label="Url for EPG infos" type="text" default="" enable="eq(-1,true)"/>
+  </category>
+
+  <category label="Advanced">
+    <setting label="Player Configuration" type="lsep"/>
+    <setting id="1080pquality" label="Play 1080p video on demand if available" type="bool" default="true"/>
+    <setting id="use_internal_player" label="Use Live Stream Pro Player instead of default" type="bool" default="false"/>
+    <setting id="force_reload" label="Force reload live channel if stops" type="bool" default="true" enable="eq(-1,true)"/>
+    <setting id="force_proxy" label="Force all live streaming under proxy" type="bool" default="false"/>
+    <setting id="tsdownloader" label="Enable if you have trouble with .m3u8" type="bool" default="false"/>
+    <setting id="hlsretry" label="Enable if you have trouble with .ts" type="bool" default="false"/>
+    <setting label="Misc" type="lsep"/>
+    <setting type="action" label="Click here to delete ALL your sources" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=777)" />
+    <setting id="add_playlist" type="bool" label="Add items with multiple links as play lists" default="false"/>
+    <setting id="ask_playlist_items" type="bool" label="Ask playlist items to choose from dialog" default="false" />
+    <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid with:" default="Genesis"/>
+  </category>
+
+  <category label="Skin">
+  <setting label="Autostart" type="lsep"/>
+      <setting id="autostart" label="Autostrat LSP with Kodi" type="bool" default="false" visible="true" enable="true" />
+      <setting id="autostart_button" type="action" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=97)" label="Save Autostart Config" />
+    <setting label="Misc" type="lsep"/>
+      <setting id="fullscreen_button" type="action" action="Action(togglefullscreen)" label="Toggle Fullscreen" />
+      <setting id="use_thumb" type="bool" label="Use Thumbnails as Fanart" default="false" />
+      <setting id="donotshowbychannels" label="Do Not show items under channel name" type="bool" default="false"/>
+  </category>
+
+  <category label="Customize Homepage">
+      <setting label="Homepage" type="lsep"/>
+      <setting id="searchotherplugins" label="Show Global Search" type="bool" default="true"/>
+      <setting id="enable_source_menu" label="Show All Source" type="bool" default="true"/>
+      <setting id="enable_ltv_menu" label="Show Live TV Source" type="bool" default="true"/>
+      <setting id="enable_vod_menu" label="Show Video on Demand Source" type="bool" default="true"/>
+      <setting id="enable_sport_menu" label="Show Sport Source" type="bool" default="true"/>
+      <setting id="enable_other_menu" label="Show Other Source" type="bool" default="false"/>
+      <setting id="enable_kodi_library" label="Show Kodi Library" type="bool" default="true"/>
+      <setting id="enable_favs_menu" label="Show LSP Favs" type="bool" default="true"/>
+      <setting id="enable_download_menu" label="Show Download" type="bool" default="true"/>
+      <setting id="enable_settings_menu" label="Show Settings" type="bool" default="true"/>
+  </category>
+
+  <!--
+  <category label=".xml Database">
+    <setting id="browse_xml_database" type="bool" label="Browse and play from .xml Database" default="false"/>
+    <setting type="action" label="Add .xml Database Sources" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=14)" />
+  </category>
+  <category label="Community Files">
+    <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
+    <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=10)" />
+  </category>
+  -->
+</settings>
