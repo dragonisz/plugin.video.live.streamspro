@@ -19,14 +19,14 @@ import xbmc
 import xbmcgui
 import xbmcaddon
 
-addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+addon = xbmcaddon.Addon('plugin.video.livestreamspro')
 ROOT_DIR = xbmc.translatePath(addon.getAddonInfo('Path'))
 
 REMOTE_VERSION_FILE = "https://raw.githubusercontent.com/cttynul/xbmcttynul/master//addons/versionlsp.xml"
-REMOTE_FILE = "https://raw.githubusercontent.com/cttynul/xbmcttynul/master//addons/plugin.video.live.streamspro.zip"
+REMOTE_FILE = "https://raw.githubusercontent.com/cttynul/xbmcttynul/master//addons/plugin.video.livestreamspro.zip"
 LOCAL_VERSION_FILE = addon.getAddonInfo('version')
 
-LOCAL_FILE = os.path.join(ROOT_DIR, "plugin.video.live.streamspro" + ".zip")
+LOCAL_FILE = os.path.join(ROOT_DIR, "plugin.video.livestreamspro" + ".zip")
 
 # DESTINATION_FOLDER sera siempre el lugar donde este la carpeta del plugin,
 # No hace falta "xbmc.translatePath", get_runtime_path() ya tiene que devolver la ruta correcta

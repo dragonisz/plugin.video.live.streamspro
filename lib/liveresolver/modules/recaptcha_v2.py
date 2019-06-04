@@ -2,7 +2,7 @@
 """
     urlresolver XBMC Addon
     Copyright (C) 2016 tknorris
-    Derived from Shani's LPro Code (https://github.com/Shani-08/ShaniXBMCWork2/blob/master/plugin.video.live.streamspro/unCaptcha.py)
+    Derived from Shani's LPro Code (https://github.com/Shani-08/ShaniXBMCWork2/blob/master/plugin.video.livestreamspro/unCaptcha.py)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

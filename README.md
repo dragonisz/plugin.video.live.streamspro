@@ -1,1 +1,1 @@
-# plugin.video.live.streamspro
+# plugin.video.livestreamspro

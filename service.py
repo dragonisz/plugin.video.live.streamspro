@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import xbmcaddon, xbmc, xbmcgui
 import sys, os
-addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+addon = xbmcaddon.Addon('plugin.video.livestreamspro')
 sys.path.append(xbmc.translatePath(os.path.join(xbmc.translatePath(addon.getAddonInfo('Path')), 'lib')))
 
 def download_epg():

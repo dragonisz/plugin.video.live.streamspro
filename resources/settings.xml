@@ -14,7 +14,7 @@
     <setting id="new_url_source_desc" type="text" label="Source Description" default="" visible="eq(-5,true)" />
     <setting label="Add Source" type="lsep"/>
     <setting id="new_source_as_visible" type="bool" label="Set new source as visibile in menu" default="true"/>
-    <setting type="action" label="Click here to add source" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=7)" />
+    <setting type="action" label="Click here to add source" option="close" action="RunPlugin(plugin://plugin.video.livestreamspro/?mode=7)" />
   </category>
 
   <category label="Add List of Sources">
@@ -32,7 +32,7 @@
     <setting id="new_url_source_desc" type="text" label="Source Description" default="" visible="eq(-5,true)" />
     <setting label="Add Source" type="lsep"/>
     <setting id="new_source_as_visible" type="bool" label="Set new source as visibile in menu" default="true"/>
-    <setting type="action" label="Click here to add source" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=77)" />
+    <setting type="action" label="Click here to add source" option="close" action="RunPlugin(plugin://plugin.video.livestreamspro/?mode=77)" />
   </category>
 
   <category label="General">
@@ -61,7 +61,7 @@
     <setting id="tsdownloader" label="Enable if you have trouble with .m3u8" type="bool" default="false"/>
     <setting id="hlsretry" label="Enable if you have trouble with .ts" type="bool" default="false"/>
     <setting label="Misc" type="lsep"/>
-    <setting type="action" label="Click here to delete ALL your sources" option="close" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=777)" />
+    <setting type="action" label="Click here to delete ALL your sources" option="close" action="RunPlugin(plugin://plugin.video.livestreamspro/?mode=777)" />
     <setting id="add_playlist" type="bool" label="Add items with multiple links as play lists" default="false"/>
     <setting id="ask_playlist_items" type="bool" label="Ask playlist items to choose from dialog" default="false" />
     <setting id="genesisorpulsar" type="enum" values="Genesis|Pulsar" label="Play IMDBid with:" default="Genesis"/>
@@ -70,7 +70,7 @@
   <category label="Skin">
   <setting label="Autostart" type="lsep"/>
       <setting id="autostart" label="Autostrat LSP with Kodi" type="bool" default="false" visible="true" enable="true" />
-      <setting id="autostart_button" type="action" action="RunPlugin(plugin://plugin.video.live.streamspro/?mode=97)" label="Save Autostart Config" />
+      <setting id="autostart_button" type="action" action="RunPlugin(plugin://plugin.video.livestreamspro/?mode=97)" label="Save Autostart Config" />
     <setting label="Misc" type="lsep"/>
       <setting id="fullscreen_button" type="action" action="Action(togglefullscreen)" label="Toggle Fullscreen" />
       <setting id="use_thumb" type="bool" label="Use Thumbnails as Fanart" default="false" />
@@ -94,11 +94,11 @@
   <!--
   <category label=".xml Database">
     <setting id="browse_xml_database" type="bool" label="Browse and play from .xml Database" default="false"/>
-    <setting type="action" label="Add .xml Database Sources" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=14)" />
+    <setting type="action" label="Add .xml Database Sources" option="close" action="Container.Update(plugin://plugin.video.livestreamspro/?mode=14)" />
   </category>
   <category label="Community Files">
     <setting id="browse_community" type="bool" label="Browse and play from Community Files" default="false"/>
-    <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.live.streamspro/?mode=10)" />
+    <setting type="action" label="Add Community File URL as Source" option="close" action="Container.Update(plugin://plugin.video.livestreamspro/?mode=10)" />
   </category>
   -->
 </settings>
