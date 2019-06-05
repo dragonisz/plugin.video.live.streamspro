@@ -173,13 +173,19 @@ def download_file(name, url):
         if ret:
             _core.addSource(os.path.join(addon.getSetting('save_location'), name), media_type=="download")
 
-def _source_search(search_object=None, search_content="all"):
-    names = ['Tutto', 'Live TV', 'Video on Demand', 'Sport', 'Download File', 'Other']
-    types = ['all', 'ltv', 'vod', 'sport', 'download', 'other']
-    dialog = xbmcgui.Dialog()
-    index = dialog.select('Select what your content is', names)
-    if index >= 0:
-        search_content = types[index]
+def _source_search(search_object=None, search_content=None):
+    if search_content is None:
+        names = ['Tutto', 'Live TV', 'Video on Demand', 'Sport', 'Download File', 'Other']
+        types = ['all', 'ltv', 'vod', 'sport', 'download', 'other']
+        dialog = xbmcgui.Dialog()
+        index = dialog.select('Select what your content is', names)
+        try:
+            if index >= 0:
+                search_content = types[index]
+            else:
+                search_content = "all"
+        except:
+            search_content = "all"
 
     import search as s
     if search_object is None:
@@ -573,7 +579,7 @@ params=get_params()
 try: url=urllib.unquote_plus(params["url"]).decode('utf-8')
 except: url=None
 
-try: name=urllib.unquote_plus(params["name"])
+try: name=urllib.unquote_plus(params["name"]).decode('utf-8')
 except: name=None
 
 try: iconimage=urllib.unquote_plus(params["iconimage"])
@@ -646,6 +652,9 @@ if mode==None:
 
 elif mode==400:
     _source_search()
+
+elif mode==401:
+    _source_search(search_object=name, search_content=url)
 
 if mode==100:
     _core.addon_log("_core.getSources")

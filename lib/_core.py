@@ -208,8 +208,13 @@ def getSources(selection="other"):
         except: traceback.print_exc()
 
 def addSourceFromAList(url=None, media_type=99):
-        if addon.getSetting("user_agent") != "" or addon.getSetting("user_agent") != "Default":
-            user_agent = addon.getSetting('user_agent').decode('utf-8')
+        if addon.getSetting("user_agent") != "":
+            if addon.getSetting("user_agent") != "Default":
+                user_agent = addon.getSetting('user_agent').decode('utf-8')
+            else:
+                user_agent = None
+        else:
+            user_agent = None
 
         if url == '' or url is None:
             return
