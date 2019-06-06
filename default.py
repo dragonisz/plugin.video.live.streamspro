@@ -7,7 +7,7 @@ addon = xbmcaddon.Addon('plugin.video.live.streamspro')
 sys.path.append(xbmc.translatePath(os.path.join(xbmc.translatePath(addon.getAddonInfo('Path')), 'lib')))
 
 from lib import _core 
-from lib import slproxy 
+#from lib import slproxy 
 from lib import updater
 try: from xml.sax.saxutils import escape
 except: traceback.print_exc()
