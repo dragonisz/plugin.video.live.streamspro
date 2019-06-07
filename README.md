@@ -16,5 +16,7 @@ Live Streams Pro + **doesn't contain or provide anything**! And it isn't develop
 
 Any copyright infringement wil be user fault, not mine. If you legally buy a gun and you use it to rob a bank whose fault is that? Seller or yours?
 
+No assistance will be given if you're using LSP+ for illegal purposes. Please respect copyrighted work and any laws applicable to yourself whilst using LSP+.
+
 ### License
 Published under **GNU General Public License V2** as original projects developed by Shani and divingmule were, [here](https://github.com/cttynul/plugin.video.live.streamspro/blob/master/LICENSE.txt) something about license.
