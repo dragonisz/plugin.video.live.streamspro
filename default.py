@@ -623,7 +623,7 @@ elif mode==99:
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 elif mode==98:
-    line1 = "Live Streams Pro + doesn't contain or provide anything! And it isn't developed with the prupose of violating any copyright, LSP+ works exactly like a video player, complaining about it cause it could make you watch pirated content is like complaining about insert any video player here cause it could do the same. Any copyright infringement wil be user fault, not mine. If you legally buy a gun and you use it to rob a bank whose fault is that? Seller or yours?
+    line1 = "Live Streams Pro + doesn't contain or provide anything! And it isn't developed with the prupose of violating any copyright, LSP+ works exactly like a video player, complaining about it cause it could make you watch pirated content is like complaining about insert any video player here cause it could do the same. Any copyright infringement wil be user fault, not mine. If you legally buy a gun and you use it to rob a bank whose fault is that? Seller or yours?"
     line2 = "Please respect copyrighted work and any laws applicable to yourself whilst using LSP+."
     xbmcgui.Dialog().ok("Live Streams Pro", line1, line2)
 
