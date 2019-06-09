@@ -815,6 +815,14 @@ elif mode==11:
 
 elif mode==12:
     _core.addon_log("_core.setResolvedUrl")
+    if not url.startswith("plugin://plugin"): #or not any(x in url for x in g_ignoreSetResolved):#not url.startswith("plugin://plugin.video.f4mTester") :
+        item = xbmcgui.ListItem(path=url)
+        xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, item)
+    else:
+        print 'Not setting setResolvedUrl'
+        xbmc.executebuiltin('XBMC.RunPlugin('+url+')')
+    '''
+    OLD OLD OLD
     if not url.startswith("plugin://plugin") or not any(x in url for x in g_ignoreSetResolved):#not url.startswith("plugin://plugin.video.f4mTester") :
         setres=True
         if '$$LSDirect$$' in url:
@@ -842,8 +850,9 @@ elif mode==12:
             else:
                 xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, item)
     else:
-#        print 'Not setting setResolvedUrl'
+        print 'Not setting setResolvedUrl'
         xbmc.executebuiltin('XBMC.RunPlugin('+url+')')
+    '''
 
 elif mode==13:
     _core.addon_log("play_playlist")
